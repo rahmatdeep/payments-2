@@ -11,6 +11,7 @@
         "./client": "./index.ts"
     },
     "prisma": {
-        "seed": "ts-node prisma/seed.ts"
+        "seed": "ts-node prisma/seed.ts",
+        "db:generate": "prisma  generate"
     }
 }
