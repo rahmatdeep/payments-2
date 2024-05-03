@@ -2,10 +2,6 @@
   "$schema": "https://turbo.build/schema.json",
   "globalDependencies": ["**/.env.*local"],
   "pipeline": {
-    "db:generate": {
-      "outputs": ["../../node_modules/.prisma/**"],
-      "outputMode": "new-only"
-    },
     "build": {
       "dependsOn": ["^build", "@repo/db#db:generate"],
       "outputs": [".next/**", "!.next/cache/**"]
